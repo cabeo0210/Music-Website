@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Music Website</title>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="header-logo"></div>
+            <header class="header-nav">
+                <ul class="header-list">
+                    <li class="header-items"><a href="" class="header-link header-link__modifier">Home</a></li>
+                    <li class="header-items"><a href="" class="header-link">Live</a></li>
+                    <li class="header-items"><a href="" class="header-link">Product</a></li>
+                    <li class="header-items"><a href="" class="header-link">Contact</a></li>
+                    <li class="header-items"><a href="" class="header-link">Support</a></li>
+                    <li class="header-items"><a href="" class="header-link">Events</a></li>
+                </ul>
+            </header>
+        </section>
+
+        <section class="content">
+            <div class="content-left">
+                <p class="content-title">
+                    Playing <br> the <br> Mood
+                </p>
+                <div class="content-text">
+                    Let the music take you away
+                </div>
+                <div class="content-main">
+                    <p class="content-play">
+                        Click here to listen
+                    </p>
+                    <img src="img/play.png" class="btn-play" id="icon">
+                </div>
+
+                <div class="content-btn">
+                    <a href="" class="content-btn--link">Get Started</a>
+                </div>
+            </div>
+            <div class="content-right"></div>
+
+        </section>
+    </div>
+
+    <audio id="mySong">
+        <source src="./media/mySong.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "img/pause.png";
+            }
+            else {
+                mySong.pause();
+                icon.src = "img/play.png";
+            }
+        }
+
+
+    </script>
+</body>
+</html>

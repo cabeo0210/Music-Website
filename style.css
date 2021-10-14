@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+/* Header */
+.header {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.header-logo {
+  width: 150px;
+  height: 90px;
+  background-image: url("img/logo.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.header-items {
+  display: inline-block;
+  margin: 0 15px;
+}
+.header-link {
+  text-decoration: none;
+  color: #acabac;
+  transition: color 0.3s linear;
+}
+.header-link:hover {
+  color: black;
+  font-weight: 600;
+}
+.header-link__modifier {
+  color: black;
+  font-weight: 600;
+}
+
+/* Content */
+
+.content {
+  width: 88%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-left {
+  margin-right: 100px;
+}
+
+.content-right {
+  margin-left: 100px;
+  background-image: url("./img/bg1.png");
+  width: 400px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-title {
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  padding-bottom: 10px;
+}
+
+.content-text {
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+
+.content-main {
+  display: flex;
+  align-items: center;
+}
+.content-play {
+  margin-right: -50px;
+}
+.btn-play {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.content-btn {
+  cursor: pointer;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef767d;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+}
+.content-btn:hover {
+  background-color: #ef767ce7;
+}
+.content-btn--link {
+  text-decoration: none;
+  color: #fff;
+}
